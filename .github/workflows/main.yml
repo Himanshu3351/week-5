@@ -15,8 +15,6 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install Dependencies
-        run: npm install
-
+      # REMOVE npm install since no dependencies are needed
       - name: Run Node.js Script
         run: node system-info.js
